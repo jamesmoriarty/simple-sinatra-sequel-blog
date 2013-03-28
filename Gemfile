@@ -1,7 +1,8 @@
 # A sample Gemfile
 source "https://rubygems.org"
+ruby "1.9.3"
 
-gem "debugger"
+# gem "debugger"
 gem "rdiscount"
 
 # web
@@ -13,4 +14,4 @@ gem "haml"
 # persistences
 gem "sequel"
 gem "sinatra-sequel"
-gem "postgres"
+gem "pg"
