@@ -3,8 +3,6 @@ simple-sinatra-sequel-blog
 
 A simple blog with Sinatra and Sequel. 
 
-Less than 200 lines of code. 
-
 Live example: [telos.co.nz](http://telos.co.nz/)
 
 start
