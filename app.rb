@@ -8,14 +8,12 @@ set :public_folder, 'public'
 enable :method_override
 
 require "sinatra/sequel"
-require "./migrations"
-
 set :database, ENV['DATABASE_URL']
 
+require "./migrations"
 class Article < Sequel::Model; end
 
 helpers do
-
   def protected!
     unless authorized?
       response['WWW-Authenticate'] = %(Basic realm="Restricted Area")
@@ -27,10 +25,9 @@ helpers do
     @auth ||=  Rack::Auth::Basic::Request.new(request.env)
     @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [ENV["ADMIN_USERNAME"], ENV["ADMIN_PASSWORD"]]
   end
-
 end
 
-error do
+not_found do
   status 404
   haml :"404"
 end
@@ -52,26 +49,26 @@ post "/" do
 end
 
 get "/:id" do
-  @article = Article[params[:id]]
+  @article = Article[params[:id]] or raise Sinatra::NotFound
   haml :show, :locals => {:article => @article}
 end
 
 get "/:id/edit" do
   protected!
-  @article = Article[params[:id]]
+  @article = Article[params[:id]] or raise Sinatra::NotFound
   haml :edit, :locals => {:article => @article}
 end
 
 put "/:id" do
   protected!
-  @article = Article[params[:id]]
+  @article = Article[params[:id]] or raise Sinatra::NotFound
   @article.update(params[:article])
   redirect "/#{@article.id}"
 end
 
 delete "/:id" do
   protected!
-  @article = Article[params[:id]]
+  @article = Article[params[:id]] or raise Sinatra::NotFound
   @article.delete
   'ok'
 end
