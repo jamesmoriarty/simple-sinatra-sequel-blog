@@ -77,4 +77,7 @@ a:hover {
 .body p {
   margin-bottom: 1em;
 }
+.body img {
+  max-width: 100%;
+}
 
