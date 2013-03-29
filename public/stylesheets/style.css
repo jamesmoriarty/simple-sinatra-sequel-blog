@@ -77,6 +77,12 @@ a:hover {
 .body p {
   margin-bottom: 1em;
 }
+.body code, .body pre {
+  background-color: #eee;
+  padding: 15px;
+  display: block;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
 .body img {
   max-width: 100%;
 }
