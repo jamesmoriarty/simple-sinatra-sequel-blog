@@ -78,12 +78,14 @@ a:hover {
   margin-bottom: 1em;
 }
 .body code, .body pre {
+  border: 1px solid #ddd;
   background-color: #eee;
-  padding: 5px 10px;
+  padding: 10px 15px;
   display: block;
   font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
 }
 .body img {
+  border: 1px dotted #444;
   max-width: 100%;
 }
 
