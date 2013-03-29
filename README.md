@@ -6,7 +6,7 @@ A simple blog with Sinatra and Sequel. Less than 200 lines of code.
 start
 -----
 ```bash
-DATABASE_URL=postgres://127.0.0.1/<DB_NAME> rackup
+$ DATABASE_URL=postgres://127.0.0.1/<DB_NAME> rackup
 ```
 
 heroku
