@@ -147,15 +147,15 @@ __END__
       = article.body
   .control-group
     %input(type="submit")
-    %a(href="javascript:void(0)" class="delete")
+    %a(href="javascript:void(0)" class="js-delete" data-path="/#{article.id}")
       Delete
 
 :javascript
-  $(".delete").click(function(){
+  $(".js-delete").click(function(){
     $.ajax({
-        url: "/#{article.id}",
-        type: 'DELETE',
-        success: function(data, textStatus) {
+        url:      $(this).data("path"),
+        type:     'DELETE',
+        success:  function(data, textStatus) {
           window.location.href = "/";
         }
     });
