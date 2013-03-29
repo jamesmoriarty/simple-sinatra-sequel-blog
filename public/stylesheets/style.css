@@ -74,15 +74,18 @@ a:hover {
   text-align: justify;
   margin: 10px;
 }
-.body p {
+.body p, .body pre {
   margin-bottom: 1em;
 }
-.body code, .body pre {
-  border: 1px solid #ddd;
-  background-color: #eee;
+.body code {
+  display: inline;
+  font-family: monospace;
+}
+.body pre {
   padding: 10px 15px;
   display: block;
-  font-family: monospace;
+  border: 1px solid #ddd;
+  background-color: #eee;
 }
 .body img {
   border: 1px dotted #444;
