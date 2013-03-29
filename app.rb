@@ -11,7 +11,12 @@ require "sinatra/sequel"
 set :database, ENV['DATABASE_URL']
 
 require "./migrations"
-class Article < Sequel::Model; end
+class Article < Sequel::Model
+  def before_save
+    self.published_at ||= Time.now
+    super
+  end
+end
 
 helpers do
   def protected!
@@ -33,7 +38,7 @@ not_found do
 end
 
 get "/" do
-  @articles = Article.all
+  @articles = Article.order(Sequel.desc(:published_at)).all
   haml :index, :locals => {:articles => @articles}
 end
 
