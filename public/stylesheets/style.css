@@ -55,9 +55,15 @@ a:hover {
   line-height: 1.25em;
   padding: .25em 1em 0 1em;
 }
-@media all (min-width: 960px) {
+@media (max-device-width: 640px) {
+  .header {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+@media (min-device-width: 960px) {
   .container {
-    width: 960px;
+    width: 760px;
     margin: 100px auto;
   }
 }
