@@ -55,9 +55,11 @@ a:hover {
   line-height: 1.25em;
   padding: .25em 1em 0 1em;
 }
-.container {
-  width: 960px;
-  margin: 100px auto;
+@media all (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: 100px auto;
+  }
 }
 .title {
   text-align: center;
