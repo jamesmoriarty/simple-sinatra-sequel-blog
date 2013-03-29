@@ -2,7 +2,7 @@ require "bundler/setup"
 
 require "sinatra"
 require "haml"
-set :haml, { :ugly => true }
+set :haml, {:ugly => true}
 
 require 'rdiscount'
 
