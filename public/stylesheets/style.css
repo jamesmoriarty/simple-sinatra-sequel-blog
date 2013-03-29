@@ -35,6 +35,10 @@ input[type=submit] {
   line-height: 1.25em;
   margin-bottom: 50px;
 }
+.article .body h2, h3, h4{
+  font-size: 1.8em;
+  margin-bottom: 0.7em;
+}
 .article h1 a, .article h2 a {
   color: #444444;
   text-decoration: none;
