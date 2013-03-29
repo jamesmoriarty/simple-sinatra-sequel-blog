@@ -70,4 +70,7 @@ a:hover {
 .title {
   text-align: center;
 }
+.body {
+  text-align: justify;
+}
 

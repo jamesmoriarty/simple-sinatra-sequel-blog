@@ -108,7 +108,7 @@ __END__
       %h2.title
         %a{:href => "/#{article.id}"}
           = article.title
-      %p.body
+      .body
         = RDiscount.new(article.body).to_html
       - if article != articles.last
         %hr
