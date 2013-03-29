@@ -82,6 +82,7 @@ a:hover {
   font-family: monospace;
 }
 .body pre {
+  overflow-x: scroll;
   padding: 10px 15px;
   display: block;
   border: 1px solid #ddd;
