@@ -2,6 +2,8 @@ require "bundler/setup"
 
 require "sinatra"
 require "haml"
+set :haml, { :ugly => true }
+
 require 'rdiscount'
 
 set :public_folder, 'public'
