@@ -43,7 +43,7 @@ input[type=submit] {
   color: #444444;
   text-decoration: none;
 }
-a, .article h1 a:hover, .article h2 a:hover{
+a, .article h1 a:hover, .article h2 a:hover {
   color: #477b96;
   text-decoration: underline;
 }
@@ -65,10 +65,12 @@ a:hover {
     margin-bottom: 100px;
   }
 }
+.container {
+  margin: 50px auto;
+}
 @media (min-device-width: 960px) {
   .container {
     width: 760px;
-    margin: 50px auto;
   }
 }
 .title {
