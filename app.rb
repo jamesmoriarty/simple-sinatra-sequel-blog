@@ -122,7 +122,7 @@ __END__
   .control-group
     %input(type="text" name="article[title]")
   .control-group
-    %textarea(name="article[body]")
+    %textarea(name="article[body]" wrap="off")
   .control-group
     %input(type="submit")
 
@@ -143,7 +143,7 @@ __END__
   .control-group
     %input{type: "text", name: "article[title]", value: article.title}
   .control-group
-    %textarea{name: "article[body]"}
+    %textarea(name="article[body]" wrap='off')
       = article.body
   .control-group
     %input(type="submit")
