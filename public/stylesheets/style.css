@@ -68,7 +68,7 @@ a:hover {
 @media (min-device-width: 960px) {
   .container {
     width: 760px;
-    margin: 100px auto;
+    margin: 50px auto;
   }
 }
 .title {

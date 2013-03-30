@@ -91,7 +91,7 @@ __END__
     %link(href="/stylesheets/reset.css" rel="stylesheet" type="text/css")
     %link(href="/stylesheets/style.css" rel="stylesheet" type="text/css")
 %body
-  .header
+  .header.clearfix
     .left{:style => "float: left;"}
       %a(href="/")
         te·los
