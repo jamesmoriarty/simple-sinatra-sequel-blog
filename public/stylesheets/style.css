@@ -93,6 +93,7 @@ a:hover {
   display: block;
   border: 1px solid #ddd;
   background-color: #eee;
+  box-shadow: #999 3px 3px 3px;
 }
 .body img {
   border: 1px dotted #444;
