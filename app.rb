@@ -1,13 +1,13 @@
 require "bundler/setup"
 
-require "sinatra"
-require "haml"
-set :haml, {:ugly => true}
-
 require 'rdiscount'
 
+require "sinatra"
 set :public_folder, 'public'
 enable :method_override
+
+require "haml"
+set :haml, {:ugly => true}
 
 require "sinatra/sequel"
 set :database, ENV['DATABASE_URL']
