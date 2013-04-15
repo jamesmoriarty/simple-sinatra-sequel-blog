@@ -64,6 +64,9 @@ a:hover {
   background-color: #FFF;
   width: 100%;
 }
+.define {
+  font-size: 0.70em;
+}
 @media (max-device-width: 640px) {
   .header {
     text-align: center;
