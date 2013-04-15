@@ -95,9 +95,10 @@ __END__
     .left{:style => "float: left;"}
       %a(href="/")
         te·los
-      &nbsp;-
-      %i
-        An ultimate object or aim.
+      %span.define
+        &nbsp;-
+        %i
+          An ultimate object or aim.
     - if authorized?
       .right{:style => "float: right;"}
         %a{:href => "/new"}

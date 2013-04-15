@@ -56,13 +56,20 @@ a:hover {
 }
 .header {
   color: #777;
+  font-size: 1.2em;
   line-height: 1.25em;
   padding: .25em 1em 0 1em;
+  position: fixed;
+  top: 0;
+  background-color: #FFF;
+  width: 100%;
 }
 @media (max-device-width: 640px) {
   .header {
     text-align: center;
-    margin-bottom: 100px;
+  }
+  .define {
+    font-size: 0.6em;
   }
 }
 .container {
