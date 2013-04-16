@@ -5,6 +5,11 @@ body, input, textarea {
   font-weight: 300;
   line-height: 1.6em;
 }
+
+em {
+  font-style: italic;
+}
+
 input[type=text] {
   width: 100%;
   vertical-align: middle;
