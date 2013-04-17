@@ -1,4 +1,4 @@
-simple-sinatra-sequel-blog
+simple-sinatra-sequel-blog [![Dependency Status](https://gemnasium.com/jamesmoriarty/simple-sinatra-sequel-blog.png)](https://gemnasium.com/jamesmoriarty/simple-sinatra-sequel-blog)
 ==========================
 
 A simple blog with Sinatra and Sequel. 
