@@ -16,5 +16,5 @@ heroku
 ```bash
 $ heroku app:create <APP_NAME>
 $ heroku config:set ADMIN_USERNAME=<USERNAME> ADMIN_PASSWORD=<PASSWORD>
-$ get push heroku master
+$ git push heroku master
 ```
