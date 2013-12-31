@@ -1,7 +1,7 @@
 simple-sinatra-sequel-blog [![Dependency Status](https://gemnasium.com/jamesmoriarty/simple-sinatra-sequel-blog.png)](https://gemnasium.com/jamesmoriarty/simple-sinatra-sequel-blog)
 ==========================
 
-A simple blog with Sinatra and Sequel. 
+A simple blog with Sinatra and Sequel. ~150 lines of code.
 
 Live example: [telos.co.nz](http://telos.co.nz/)
 
